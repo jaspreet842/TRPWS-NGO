@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5rem;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+hr{
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 50%;
+}
+
+/* Navigation Bar */
+.navBar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(17, 26, 29);
+}
+.navBar img{
+    filter: opacity(0.1);
+}
+.navList{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-end;
+}
+.navBtns{
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    outline: none;
+}
+.btnBar:hover{
+    cursor: pointer;
+    background-color: rgb(76, 172, 164);
+    border-radius: 1rem;
+    margin: 0 1rem;
+}
+.navBtns a{
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    color: white;  
+}
+#homeBtn a{
+    color: rgb(76, 172, 164);
+}
+.hamBurger{
+    color: white;
+    margin: 4rem;
+    font-size: 40px;
+}
+
+/* Carousel Of Images */
+.imageSlider{
+    margin: 1rem;
+}
+.imageSlider img{
+    width: 100%;
+}
+
+/* Section of Who We Are and We Teach Them the right Way*/
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2rem 0rem;
+    background-color: #e0ebe6f8;
+}
+.cardContent{
+    border-radius: 1rem;
+    background-color: rgb(17, 26, 29);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30%;
+    padding: 4rem;
+}
+.cardContent h1{
+    text-align: center;
+    margin: 0px auto;
+    color: rgb(76, 172, 164);
+    padding-bottom: 2rem;
+}
+.cardContent div{
+    font-size: 18px;
+    padding: 1rem 1rem;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Section of What We Do */
+.whatWeDo{
+    padding: 4rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.7) url('https://mediaindia.eu/wp-content/uploads/2017/01/14938316_593811450814180_4792412075286765649_n.jpg') no-repeat center/cover;
+    background-blend-mode: darken;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+#headingWhatWeDo{
+    display: flex;
+    color: rgb(247, 173, 37);
+}
+#headingWhatWeDo div{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5rem;
+    padding: 0 1rem;
+}
+.moreContent{
+    margin: 3rem;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.whatWeDoContent{
+    width: 25%;
+    text-align: center;
+}
+.whatWeDoContent h2{
+    color: rgb(11, 226, 215);
+}
+.whatWeDoContent div{
+    padding-top: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+.btn{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+    border: none;
+    color: white;
+    background-color: rgb(62, 231, 217);
+    padding: 0.8rem 1.7rem;
+    border-radius: 2rem;
+    margin: 2rem 0;
+    outline: none;
+}
+.btn:hover{
+    background-color: rgb(121, 158, 201);
+    cursor: pointer;
+}
+
+/* Section For Services We Provide */
+#servicesWeProvide{
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(227, 235, 225);
+}
+.servicesCards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cardN{   
+    margin: 2.5rem 0rem;
+    padding: 1rem 0.5rem;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    border-radius: 2rem;
+}
+#teachingCard{    
+    background-color: rgb(192, 243, 177);
+    transition: margin 0.1s ease-in 0.1s;
+}
+#donateDriveCard{    
+    background-color: rgb(165, 223, 201);
+    transition: margin 0.1s ease-in 0.1s;
+}
+#endDrugCard{    
+    background-color: rgb(182, 201, 207);
+    transition: margin 0.1s ease-in 0.1s;
+}
+
+/*Transition on box while Hovering.*/
+#teachingCard:hover{
+    margin-top: 0.5rem;
+}
+#donateDriveCard:hover{
+    margin-top: 1rem;
+}
+#endDrugCard:hover{
+    margin-top: 0.5rem;
+}
+.cardN img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 10rem;
+    margin: 2rem 0;
+}
+.cardN div{
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* Section about Education At TRPWS */
+#educationTrpws{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+#educationTrpws h1{
+    background-color: rgb(160, 247, 239);
+    border-radius: 2rem;
+    padding: 1rem 4rem;
+}
+.educationCards{
+    display: flex;
+    justify-content: space-between;
+}
+.cardEdu{
+    width: 30%;
+    background-color: rgb(176, 255, 229);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 4rem 1rem;
+    border: 0.05rem solid rgba(51, 146, 138, 0.651);    
+    box-shadow: 1rem 1rem 1rem rgb(109, 236, 226);
+    transition: margin 0.1s ease-in 0.1s;
+}
+.cardEdu:hover{
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+.cardEdu img{
+    height: 30rem;
+    border-radius: 1rem;
+    width: 100%;    
+    margin-bottom: 1rem;
+}
+
+/* Section on Connect with TRPWS */
+#connectWithUs{    
+    background-color: rgb(131, 202, 202);
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#connectWithUs h1{
+    color: white;
+}
+.connectCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 4rem 0;
+}
+.cardConnect{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(189, 215, 245);
+    width: 30%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.cardConnect img{
+    align-self: center;
+    border-radius: 1rem;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 80%;
+}
+.cardConnect div{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.btnReadMore{
+    margin: 1rem 0;
+    font-family: 'Mulish', sans-serif;
+    width: 27%;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    background-color: rgb(6, 150, 114);
+    border: none;
+    outline: none;
+}
+.btnReadMore:hover{
+    background-color: rgb(91, 126, 167);
+    border: none;
+    cursor: pointer;
+}
+.btnReadMore .fa{
+    margin-left: 0.1rem;
+}
+/* Footer */
+footer{
+    background-color: grey;
+    color: white;
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    padding: 2rem;
+}
+footer div{
+    margin-bottom: 1rem;
+}
+.icons{
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.icons a{
+    text-decoration: none;
+}
+.icons .fa{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    outline: none;
+    color: white;
+}
+.fa-facebook{
+    background-color: #3d5b99;
+}
+.fa-instagram{
+    background-color: #fb3958;
+}
+.fa-twitter{
+    background-color: #00aced;
+}
+.fa-youtube{
+    background-color: #e64a41;
+}
+.fa-linkedin{
+    background-color: #0073a4;
+}
+.fa-google-plus{
+    background-color: #e64a41;
+}

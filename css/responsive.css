@@ -1,0 +1,76 @@
+@media (max-width: 1200px){
+    .servicesCards{
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    .cardN{
+        width: 80%;
+        align-self: center;
+    }    
+    .cardN img{
+        width: 10rem;
+        height: 10rem;
+    }
+}
+@media (max-width: 1000px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .navList{
+        display: none;
+    }
+    .cardContent{
+        width: 80%;
+        margin: 2rem;
+        padding: 1rem;
+    }
+    #headingWhatWeDo div{
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+    }
+    .moreContent{
+        margin: 0;
+        padding: 0;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    .whatWeDoContent{
+        margin: 0;
+        padding: 0;
+        margin-top: 3rem;
+        width: 100%;
+        align-self: center;   
+    }
+    #servicesWeProvide{
+        padding: 0;
+        padding-top: 4rem;
+    }
+    #educationTrpws h1{
+        padding: 0.2rem;
+    }
+    .educationCards{
+        flex-direction: column;
+    }
+    .cardEdu{
+        width: 90%;
+        align-self: center;
+    }
+    .cardEdu img{
+        height: 20rem;
+    }
+    .cardConnect{
+        margin: 1rem 0;
+        width: 60%;
+        align-self: center;
+    }
+}
+@media (max-width: 600px){
+    .btnReadMore{
+        width: 45%;
+        padding: 0.1rem;
+    }
+}
