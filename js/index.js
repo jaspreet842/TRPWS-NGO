@@ -1,7 +1,20 @@
 let hamburger = document.querySelector('#hamBurger');
 console.log(hamburger);
 hamburger.addEventListener('click', function() {
+    let navbar = document.querySelector('#navBar');
     let navlist = document.querySelector('#navList');
+    let li = document.querySelectorAll('.navBtns');
+    let logoimage = document.querySelector('.logoImg');
+    hamburger.addEventListener('click', function() {
+        
+    })
+    logoimage.setAttribute('style', 'display: none;');
+    navbar.setAttribute('style', 'align-items: center;');
+    navlist.setAttribute('style', 'display: flex; flex-direction: column; align-self: center; width: 80%;');
+    li.forEach(ele => {
+        ele.setAttribute('style', 'border: 2px solid red;')
+    });
+    hamburger.setAttribute('style', 'position: absolute; right: 2px; top: 1px;')
     console.log(navlist);
 });
 

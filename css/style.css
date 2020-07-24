@@ -21,7 +21,6 @@ hr{
 /* Navigation Bar */
 #navBar{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgb(17, 26, 29);
 }
@@ -31,7 +30,6 @@ hr{
 #navList{
     align-self: flex-end;
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
     justify-content: flex-end;
 }
@@ -59,7 +57,7 @@ hr{
 #hamBurger{
     display: none;
     color: white;
-    margin: 1rem 4rem;
+    margin: auto 4rem;
     font-size: 40px;
 }
 
