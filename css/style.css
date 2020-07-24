@@ -69,16 +69,6 @@ hr{
     display: none;
 }
 
-/* Carousel of Images */
-#background{
-    background: rgba(0, 0, 0, 0.6) url('https://www.trpws.com/wp-content/uploads/2020/06/WhatsApp-Image-2020-05-30-at-16.46.12-1.jpeg')no-repeat center center/cover;
-    background-blend-mode: darken;
-}
-.defineSize{
-    margin: 0 6rem;
-    padding: 2rem 0;
-}
-
 /* Section of Who We Are and We Teach Them the right Way*/
 #cards{
     display: flex;
@@ -173,7 +163,11 @@ hr{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(227, 235, 225);
+    /* background: linear-gradient(100deg, #e1b382, #c89666,  #2d545e, #12343b); */
+    background: linear-gradient(100deg, #333745, #333745);
+    color: white;
+}
+#servicesWeProvide h1{
 }
 .servicesCards{
     display: flex;
@@ -186,17 +180,21 @@ hr{
     height: 100%;
     text-align: center;
     border-radius: 2rem;
+    /* background-color: rgb(10, 71, 88); */
 }
-#teachingCard{    
-    background-color: rgb(192, 243, 177);
+#teachingCard{
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
     transition: margin 0.1s ease-in 0.1s;
 }
-#donateDriveCard{    
-    background-color: rgb(165, 223, 201);
+#donateDriveCard{
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
     transition: margin 0.1s ease-in 0.1s;
 }
-#endDrugCard{    
-    background-color: rgb(182, 201, 207);
+#endDrugCard{
+    background: linear-gradient(to right, #96c93d, #00b09b);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
     transition: margin 0.1s ease-in 0.1s;
 }
 
