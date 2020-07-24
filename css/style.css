@@ -60,6 +60,11 @@ hr{
     margin: auto 4rem;
     font-size: 40px;
 }
+#hamBack{
+    color: white;
+    font-size: 20px;
+    display: none;
+}
 
 /* Carousel of Images */
 #background{
