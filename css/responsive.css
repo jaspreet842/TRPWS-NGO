@@ -70,6 +70,9 @@
         width: 60%;
         align-self: center;
     }
+    .icons{
+        width: 50%;
+    }
 }
 @media (max-width: 600px){
     #navBar img{
@@ -80,7 +83,7 @@
         margin-left: 2rem;
     }
     .btnReadMore, .btnReadLess{
-        width: 45%;
+        width: 48%;
         padding: 0.1rem;
     }
     .defineSize{
@@ -91,9 +94,40 @@
         margin: 0;
         padding: 0%;
     }
+    .icons{
+        width: 75%;
+    }
+}
+@media (max-width: 400px){
+    .btnReadMore, .btnReadLess{
+        padding: 0.1rem;
+        width: 65%;
+    }
+    .cardConnect img{
+        height: 111px;
+    }
+    .icons{
+        width: 100%;
+    }
 }
 @media(max-width: 300px){
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    div{
+        font-size: 1rem;
+    }
     .cardConnect{
         padding: 0.2rem;
+    }
+    #servicesWeProvide h1{
+        font-size: 1.5rem;
+    }
+    .btnReadMore, .btnReadLess{
+        padding: 0.1rem;
+        width: 70%;
     }
 }
