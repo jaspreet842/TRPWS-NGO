@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(17, 26, 29);
+}
+#navBar img{
+    filter: opacity(0.8);
+}
+#navList{
+    align-self: flex-end;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+.navBtns{
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    outline: none;
+}
+.btnBar:hover{
+    cursor: pointer;
+    background-color: rgb(76, 172, 164);
+    border-radius: 1rem;
+    margin: 0 1rem;
+}
+.navBtns a{
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    color: white;  
+}
+#eventsBtn a{
+    color: rgb(76, 172, 164);
+}
+#hamBurger{
+    display: none;
+    color: white;
+    margin: auto;
+    font-size: 30px;
+}
+#hamBack{
+    color: white;
+    font-size: 20px;
+    display: none;
+}

@@ -1,3 +1,20 @@
+// let nextBtn = document.querySelector('#nextBtn');
+// let div1 = document.querySelector('#first');
+// let div2 = document.querySelector('#second');
+// let div3 = document.querySelector('#third');
+
+// nextBtn.addEventListener('click', function(){
+//     div1.setAttribute('style', 'display: none;');
+//     div2.setAttribute('style', 'display: block;');
+//     nextBtn.addEventListener('click', function(){
+//         div2.setAttribute('style', 'display: none;');
+//         div3.setAttribute('style', 'display: block;');
+//         nextBtn.addEventListener('click', function(){
+//             div3.setAttribute('style', 'display: none;');
+//             div1.setAttribute('style', 'display: block;');
+//         });
+//     });
+// });
 let hamburger = document.querySelector('#hamBurger');
 let hamback = document.querySelector('#hamBack');
 let navlist = document.querySelector('#navList');
@@ -25,22 +42,3 @@ btnApply.addEventListener('click', function () {
         a.setAttribute('href', '#headingWhatWeDo');
     }
 });
-
-let btnReadMore = document.querySelectorAll('.btnReadMore');
-let contentReadMore = document.querySelectorAll('.contentReadMore');
-let btnReadLess = document.querySelectorAll('.btnReadLess');
-
-for (let i = 0; i < btnReadMore.length; i++) {
-    btnReadMore[i].addEventListener('click', function () {
-
-        btnReadMore[i].setAttribute('style', 'display: none;');
-        contentReadMore[i].setAttribute('style', 'display: block;');
-        btnReadLess[i].setAttribute('style', 'display: block;');
-
-        btnReadLess[i].addEventListener('click', function () {
-            btnReadMore[i].setAttribute('style', 'display: block;');
-            contentReadMore[i].setAttribute('style', 'display: none;');
-            btnReadLess[i].setAttribute('style', 'display: none;');
-        });
-    });
-}

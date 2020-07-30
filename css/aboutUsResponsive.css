@@ -1,0 +1,83 @@
+@media (max-width: 1000px){
+    #navList{
+        display: none;
+    }
+    #hamBurger{
+        display: block;
+    }
+    .icons{
+        width: 50%;
+    }
+    #intro{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    #intro div{
+        width: 100%;
+    }
+    #second{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    #second h2 ul{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: 2rem;
+    }
+}
+@media (max-width:900px){
+    #ourApproach{
+        padding: 0;
+    }
+    #ourApproach p{
+        padding: 1rem 2rem;
+    }
+    #trpwsTeam div:nth-child(n){
+        flex-direction: column;
+    }
+    #trpwsTeam{
+        margin: 2rem 1.5rem;
+    }
+    /* .teamMate{
+        flex-direction: column;
+        align-items: center;
+    } */
+}
+@media (max-width: 600px){
+    #navBar img{
+        display: none;
+    }
+    #hamBurger{
+        margin: 1rem;
+        margin-left: 2rem;
+    }
+    .defineSize{
+        margin: 1rem;
+        padding: 1rem;
+    }    
+    #smallSize{
+        margin: 0;
+        padding: 0%;
+    }
+    .icons{
+        width: 75%;
+    }
+}
+@media (max-width: 400px){
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .icons{
+        width: 100%;
+    }
+}
