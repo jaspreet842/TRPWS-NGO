@@ -45,11 +45,77 @@ html{
 #hamBurger{
     display: none;
     color: white;
-    margin: auto;
     font-size: 30px;
+    margin: auto 1rem;
 }
 #hamBack{
     color: white;
     font-size: 20px;
     display: none;
+}
+
+/* Events at TRPWS */
+
+
+/* Footer */
+footer{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(73, 70, 70);
+    color: white;
+    font-size: large;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+}
+#logoFoot{
+    width: 30%;
+}
+#logoFoot p{
+    margin: 1rem 0;
+}
+#otherThings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#otherThings div{
+    padding: 0.5rem 0;
+}
+.icons{
+    margin: 0rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.icons a{
+    text-decoration: none;
+}
+.icons .fa{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    outline: none;
+    color: white;
+}
+.fa-facebook{
+    background-color: #3d5b99;
+}
+.fa-instagram{
+    background-color: #fb3958;
+}
+.fa-twitter{
+    background-color: #00aced;
+}
+.fa-youtube{
+    background-color: #e64a41;
+}
+.fa-linkedin{
+    background-color: #0073a4;
+}
+.fa-google-plus{
+    background-color: #e64a41;
 }

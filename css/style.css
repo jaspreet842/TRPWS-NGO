@@ -60,7 +60,7 @@ hr{
 #hamBurger{
     display: none;
     color: white;
-    margin: auto;
+    margin: auto 1rem;
     font-size: 30px;
 }
 #hamBack{
@@ -323,22 +323,34 @@ hr{
 
 /* Footer */
 footer{
+    font-family: 'Open Sans', sans-serif;
     background-color: rgb(73, 70, 70);
     color: white;
     font-size: large;
     text-align: center;
-    font-weight: bold;
     padding: 2rem;
+    display: flex;
 }
-footer div{
-    margin-bottom: 1rem;
+#logoFoot{
+    width: 30%;
+}
+#logoFoot p{
+    margin: 1rem 0;
+}
+#otherThings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#otherThings div{
+    padding: 0.5rem 0;
 }
 .icons{
-    margin: 1rem auto;
+    margin: 0rem auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 30%;
+    width: 50%;
 }
 .icons a{
     text-decoration: none;
