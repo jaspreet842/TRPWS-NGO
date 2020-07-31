@@ -86,7 +86,7 @@ body::before{
 #intro{
     border: 1px solid grey;
     border-radius: 0.5rem;
-    background: linear-gradient(rgb(93, 138, 189), rgb(117, 201, 142));
+    background: linear-gradient(rgba(94, 181, 252, 0.867), rgba(141, 110, 228, 0.885));
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -94,7 +94,7 @@ body::before{
     margin-top: 10rem;
 }
 #intro div h1{
-    color: rgb(16, 51, 49);
+    color: rgb(2, 22, 21);
 }
 #first{
     animation: disappear 1s ease-in-out 1s 1 backwards;
@@ -136,7 +136,8 @@ body::before{
 #ourApproach{
     border: 1px solid grey;
     border-radius: 0.5rem;
-    background: url('https://images.pexels.com/photos/5412/water-blue-ocean.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background: rgba(0, 0, 0, 0.3) url('https://images.pexels.com/photos/5412/water-blue-ocean.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-blend-mode: darken;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -190,6 +191,9 @@ body::before{
     margin: 2rem 0;
     font-family: 'Mulish', sans-serif;
     font-weight: 100;
+}
+#aKaur .personImage img{
+    width: 300px;
 }
 
 /* Footer */
