@@ -44,3 +44,4 @@ for (let i = 0; i < btnReadMore.length; i++) {
         });
     });
 }
+window.onbeforeunload(scrollTo(0, 0));

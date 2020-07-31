@@ -34,6 +34,12 @@
         margin: 0;
         padding: 0;
     }
+    .event{
+        padding: 2rem;
+    }
+    .event h1 a{
+        font-size: 1.5rem;
+    }
     .icons{
         width: 75%;
     }
@@ -48,11 +54,21 @@
     p{
         font-size: 1rem;
     }
+    .event{
+        margin: 0.5rem;
+        padding: 1.5rem 0.3rem;
+    }
+    .event h1 a{
+        font-size: 1.3rem;
+    }
     .icons{
         width: 100%;
     }
     .whatWeDo{
         padding: 2rem;
         padding-top: 4rem;
+    }
+    .buttonsForPages{
+        margin: 0;
     }
 }

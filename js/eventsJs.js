@@ -17,11 +17,51 @@ hamback.addEventListener('click', function () {
     hamburger.setAttribute('style', 'display: block;');
 })
 
-let btnApply = document.querySelector('.btnApply');
-btnApply.addEventListener('click', function () {
-    let val = confirm('Do You want To Continue To Apply For Internship?');
-    if (val == false) {
-        let a = document.querySelector('#targetForm');
-        a.setAttribute('href', '#headingWhatWeDo');
-    }
+let nextPage = document.querySelector('#nextPage');
+let previousPage = document.querySelector('#previousPage');
+let page1 = document.querySelector('#eventPage1');
+let page2 = document.querySelector('#eventPage2');
+let pageNo1 = document.querySelector('#page1');
+let pageNo2 = document.querySelector('#page2');
+
+pageNo2.addEventListener('click', function(){
+    page1.setAttribute('style', 'display: none;');
+    page2.setAttribute('style', 'display: block;');
+    nextPage.setAttribute('style', 'display: none;');
+    previousPage.setAttribute('style', 'display: block;');
+    pageNo1.setAttribute('style', 'color: black;');
+    pageNo2.setAttribute('style', 'color: goldenrod;');
+    window.scrollTo(0,0);
 });
+
+nextPage.addEventListener('click', function(){
+    page1.setAttribute('style', 'display: none;');
+    page2.setAttribute('style', 'display: block;');
+    nextPage.setAttribute('style', 'display: none;');
+    previousPage.setAttribute('style', 'display: block;');
+    pageNo1.setAttribute('style', 'color: black;');
+    pageNo2.setAttribute('style', 'color: goldenrod;');
+    window.scrollTo(0,0);
+});
+
+pageNo1.addEventListener('click', function(){
+    page2.setAttribute('style', 'display: none;');
+    page1.setAttribute('style', 'display: block;');
+    nextPage.setAttribute('style', 'display: block;');
+    previousPage.setAttribute('style', 'display: none;');
+    pageNo1.setAttribute('style', 'color: goldenrod;');
+    pageNo2.setAttribute('style', 'color: black;');
+    window.scrollTo(0,0);
+});
+
+previousPage.addEventListener('click', function(){
+    page2.setAttribute('style', 'display: none;');
+    page1.setAttribute('style', 'display: block;');
+    nextPage.setAttribute('style', 'display: block;');
+    previousPage.setAttribute('style', 'display: none;');
+    pageNo1.setAttribute('style', 'color: goldenrod;');
+    pageNo2.setAttribute('style', 'color: black;');
+    window.scrollTo(0,0);
+});
+
+window.onbeforeunload(scrollTo(0, 0));
