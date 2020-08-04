@@ -15,7 +15,7 @@ hamback.addEventListener('click', function () {
     navlist.setAttribute('style', 'display: none;')
     hamback.setAttribute('style', 'display:none;');
     hamburger.setAttribute('style', 'display: block;');
-})
+});
 
 let btnApply = document.querySelector('.btnApply');
 btnApply.addEventListener('click', function () {

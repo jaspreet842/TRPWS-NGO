@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(17, 26, 29);
+}
+#navBar img{
+    filter: opacity(0.8);
+}
+#navList{
+    align-self: flex-end;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+.navBtns{
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    outline: none;
+}
+.btnBar:hover{
+    cursor: pointer;
+    background-color: rgb(76, 172, 164);
+    border-radius: 1rem;
+    margin: 0 1rem;
+}
+.navBtns a{
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    color: white;  
+}
+#contactBtn a{
+    color: rgb(76, 172, 164);
+}
+#hamBurger{
+    display: none;
+    color: white;
+    margin: auto 1rem;
+    font-size: 30px;
+}
+#hamBack{
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+/* Footer */
+footer{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(73, 70, 70);
+    color: white;
+    font-size: large;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+}
+#logoFoot{
+    width: 30%;
+}
+#logoFoot p{
+    margin: 1rem 0;
+}
+#otherThings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#otherThings div{
+    padding: 0.5rem 0;
+}
+.icons{
+    margin: 0rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.icons a{
+    text-decoration: none;
+}
+.icons .fa{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    outline: none;
+    color: white;
+}
+.fa-facebook{
+    background-color: #3d5b99;
+}
+.fa-instagram{
+    background-color: #fb3958;
+}
+.fa-twitter{
+    background-color: #00aced;
+}
+.fa-youtube{
+    background-color: #e64a41;
+}
+.fa-linkedin{
+    background-color: #0073a4;
+}
+.fa-google-plus{
+    background-color: #e64a41;
+}

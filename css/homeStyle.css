@@ -204,17 +204,6 @@ hr{
     font-weight: bold;
 }
 
-/* Transition on box while Hovering.
-#teachingCard:hover{
-    margin-top: 0.5rem;
-}
-#donateDriveCard:hover{
-    margin-top: 0.5rem;
-}
-#endDrugCard:hover{
-    margin-top: 0.5rem;
-} */
-
 /* Section about Education At TRPWS */
 #educationTrpws{
     display: flex;

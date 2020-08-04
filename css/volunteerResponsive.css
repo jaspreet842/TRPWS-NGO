@@ -1,9 +1,18 @@
 @media (max-width: 1000px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
     #navList{
         display: none;
     }
     #hamBurger{
         display: block;
+    }
+    .icons{
+        width: 50%;
     }
     footer{
         flex-direction: column;
@@ -25,46 +34,42 @@
     #hamBurger{
         margin: 1rem;
         margin-left: 2rem;
-    }  
+    }
+    .btnReadMore, .btnReadLess{
+        width: 48%;
+        padding: 0.1rem;
+    }
+    .fieldsItem{
+        width: 100%;
+    }
+    #head div{
+        font-size: 1.37rem;
+    }
     #smallSize{
         margin: 0;
-        padding: 0;
-    }
-    .event{
-        padding: 2rem;
-    }
-    .event h1 a{
-        font-size: 1.5rem;
+        padding: 0%;
     }
     .icons{
         width: 75%;
     }
 }
 @media (max-width: 400px){
+    .icons{
+        width: 100%;
+    }
+    #head div{
+        margin: 0 2rem;
+        text-align: center;
+    }
+    #head div hr{
+        display: none;
+    }
+}
+@media(max-width: 300px){
     h1{
         font-size: 1.5rem;
     }
     h2{
-        font-size: 1rem;
-    }
-    p{
-        font-size: 1rem;
-    }
-    .event{
-        margin: 0.5rem;
-        padding: 1.5rem 0.3rem;
-    }
-    .event h1 a{
         font-size: 1.3rem;
-    }
-    .icons{
-        width: 100%;
-    }
-    .whatWeDo{
-        padding: 2rem;
-        padding-top: 4rem;
-    }
-    .buttonsForPages{
-        margin: 0;
     }
 }
