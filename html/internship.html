@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship - The Rising People Welfare Society</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,800&family=Open+Sans:ital@1&family=Roboto+Condensed:ital@1&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,800&family=Open+Sans:ital@1&family=Roboto+Condensed:ital@1&family=Roboto:ital,wght@1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/internStyle.css">
     <link rel="stylesheet" href="../css/internResponsive.css">
 </head>
+
 <body>
     <nav id="navBar">
         <img color="white" src="../cropped-Logo-removebg-preview.png" class="logoImg"
@@ -28,10 +33,60 @@
         </div>
     </nav>
 
-    <form action="">
-        Name: <input type="text" name="name" id="name">
-        Email: <input type="email" name="email" id="email">        
-    </form>
+    <section id="background">
+        <div id="intro">
+            <h1>GET INVOLVED<hr></h1>
+            <p>
+                We provide opportunity for volunteering and internship at our NGO TRPWS. Anyone irrespective of age, gender, race, colour, country can apply for internships in various fields at our NGO.
+            </p>
+            <a href="#internForm">Apply here for internships <i class="fa fa-angle-double-down"></i> </a>
+        </div>
+    </section>
+
+    <section id="backgroundForm">
+        <div id="bgGradient">
+            <div id="form">
+                <img src="https://s3.ap-south-1.amazonaws.com/interntheory/uploads/company/companylogos/fe5dbbcea5ce7e2988b8c69bcfdfde8904aabc1f/6fe086a3a375c2e755cf2c156718a8a6f2c77a9bcom.jpg" alt="intern">
+                <form id="internForm">
+                    <h1>REGISTRATION INFO</h1>
+                    <div class="formElement">
+                        <i class="fa fa-user"></i>
+                        <input class="formInput" type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="formElement">
+                        <i class="fa fa-phone"></i>
+                        <input class="formInput" type="tel" name="number" id="number" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="formElement">
+                        <i class="fa fa-envelope"></i>
+                        <input class="formInput" type="email" name="email" id="email" cols="30" rows="30" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="formElement2">
+                        <label for="internType"></label>
+                        <select class="formInput" name="internType" id="internType" required>
+                            <option value="default" selected>--Choose Internship Type--</option>
+                            <option value="teach">Teaching</option>
+                            <option value="webD">Web Development</option>
+                            <option value="graD">Graphic Designing</option>
+                            <option value="conW">Content Writing</option>
+                            <option value="socMM">Social Media Marketing</option>
+                            <option value="humR">Human Resources</option>
+                            <option value="phoG">Photography</option>
+                            <option value="pubR">Public Relation</option>
+                            <option value="creD">Creative Department</option>
+                            <option value="camA">Campus Ambassador</option>
+                        </select>
+                    </div>
+                    <div class="formElement2">
+                        <i class="fa fa-message"></i>
+                        <textarea class="formInput" name="message" id="message" placeholder="Type Your Message Here"></textarea>
+                    </div>
+                    <button class="btn submitBtn" type="submit">Submit</button>
+                    <button class="btn resetBtn" type="submit">Reset</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div id="logoFoot">

@@ -64,6 +64,129 @@ h2{
     display: none;
 }
 
+/* Intro Section */
+#background{
+    background: url('https://www.trpws.com/wp-content/uploads/2020/06/carousel11.png') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 90vh;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 100%;
+    padding: 2rem;
+    background-image: linear-gradient(90deg, rgba(21, 245, 234, 0.7), rgba(100, 12, 241, 0.7));
+}
+#intro h1{
+    font-size: 4rem;
+    font-weight: lighter;
+}
+#intro h1 hr{
+    margin-top: 0.2rem;
+    background-color: white;
+    height: 1px;
+}
+#intro p{
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+#intro a{
+    margin: 2rem;
+    text-decoration: none;
+    background-color: #fb3958;
+    color: white;
+    font-family: 'Roboto-Condensed', sans-serif;
+    padding: 0.8rem 1.3rem;
+    border-radius: 2rem;
+}
+
+/* Internship Form */
+#backgroundForm{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTONkvSMcaZLG3506rI9H0uN7PZoPZpT9Gidw&usqp=CAU');
+}
+#bgGradient{
+    padding: 4rem;
+    background: linear-gradient(90deg, rgb(0, 255, 179,0.4), rgb(0, 238, 255,0.4));
+}
+#form{
+    border-radius: 2rem;
+    width: 100%;
+    display: flex;
+    background-color: rgb(27, 27, 27);
+    box-shadow: rgb(10, 10, 10) 1rem 1rem 1rem;
+}
+#form img{
+    width: 50%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+#internForm{
+    margin: 2rem auto;
+    width: 40%;
+}
+#internForm{
+    color: white;
+    font-family: 'Mulish', sans-serif;
+}
+#internForm h1{
+    text-align: center;
+}
+.formElement{
+    display: flex;
+    margin: 4rem 0;
+    border-bottom: 2px solid grey; 
+}
+.formElement2{
+    display: flex;
+}
+.formElement ::placeholder, .formElement2 ::placeholder{
+    color: rgb(161, 155, 155);
+}
+.formInput{
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0 2rem;
+}
+#internType, #message{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+#internType{
+    border-bottom: 2px solid grey;
+}
+#internType option{
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+#message{
+    border: 2px solid grey;
+}
+.fa{
+    color: white;
+}
+.submitBtn{
+    background-color: #0ca6e9;
+    font-weight: 500;
+    color: white;
+    margin-right: 3rem;
+}
+.resetBtn{
+    background-color: #fb3958;
+    color: white;
+    font-weight: 500;
+    padding: inherit 1rem;
+}
+
 /* Footer */
 footer{
     font-family: 'Open Sans', sans-serif;

@@ -82,7 +82,6 @@ h2{
 #background hr{
     margin: 0em;
     background-color: white;
-    /* width: 60%; */
     height: 2px;
     animation: line 1s ease-out 1s 1 backwards;
 }

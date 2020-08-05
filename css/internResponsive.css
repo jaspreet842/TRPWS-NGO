@@ -27,6 +27,25 @@
         padding-top: 1rem;
     }
 }
+@media (max-width: 800px){
+    #intro{
+        padding: 2rem 1rem;
+    }
+    #intro p{
+        padding: 0;
+    }
+    #internForm h1{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 700px){
+    #form img{
+        display: none;
+    }
+    #internForm{
+        width: 90%;
+    }
+}
 @media (max-width: 600px){
     #navBar img{
         display: none;
@@ -39,6 +58,12 @@
         width: 48%;
         padding: 0.1rem;
     }
+    #intro h1{
+        font-size: 3rem;
+    }
+    #intro p{
+        font-size: 1.3rem;
+    }
     #smallSize{
         margin: 0;
         padding: 0%;
@@ -48,8 +73,26 @@
     }
 }
 @media (max-width: 400px){
+    #intro{
+        padding: 2rem 0.5rem;
+    }
+    #intro h1{
+        font-size: 2.5rem;
+    }
+    #intro p{
+        font-size: 1.2rem;
+    }
+    #intro a{
+        margin: 2rem 0;
+    }
+    .formInput{
+        margin: 0 1rem;
+    }
     .icons{
         width: 100%;
+    }
+    #bgGradient{
+        padding: 4rem 1rem;
     }
 }
 @media(max-width: 300px){
