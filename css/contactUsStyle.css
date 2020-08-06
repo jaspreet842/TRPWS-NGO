@@ -20,7 +20,7 @@ h2{
 #navBar{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(17, 26, 29);
+    background: url('https://ak.picdn.net/shutterstock/videos/24478154/thumb/1.jpg') no-repeat center/cover;
 }
 #navBar img{
     filter: opacity(0.8);
@@ -64,45 +64,100 @@ h2{
     display: none;
 }
 
-/* section */
+/* Introductory section */
 #background{
-    /* background: rgba(0, 0, 0, 0.7) url('https://www.ashokleyland.com/documents/1305159/1312286/Contact+us_topbanner_cropped.jpg/97407cec-b0fb-6e71-0062-76d3b367f6d2?t=1523961063566') no-repeat center/cover; */
-    background: rgba(0, 0, 0, 0.7) url('https://hexaware.com/wp-content/uploads/2019/10/contact-us.jpg') no-repeat center/cover;
-    background-blend-mode: darken;
-    height: 100vh;
+    background: url('https://files.123freevectors.com/wp-content/original/130999-abstract-blue-and-white-polygonal-triangular-background.jpg') no-repeat center/cover;
+    height: 80vh;
 }
 #intro{
-    background: linear-gradient(90deg, rgba(123, 42, 99, 0.7), rgba(123, 42, 55, 0.7));
-    padding: 4rem 1rem;
     height: 100%;
-}
-#intro h1{
-    font-size: 6rem;
-    background-image: linear-gradient(90deg, rgb(72, 255, 0), rgb(98, 0, 255), rgb(72, 255, 0), rgb(98, 0, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: white;
-    text-align: center;
-}
-#connectList{
-    color: white;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.connectType{
-    width: 40%;
-    margin: 2rem 0;
-    padding: 0 3rem;
+#intro h1{
+    font-size: 3rem;
 }
-.connectType h2{
-    text-align: center;
-    margin-bottom: 1rem;
+#intro h1 hr{
+    height: 1px;
+    margin: 0;
+    background-color: black;
 }
-.connectType div{
+#intro p{
     font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
+}
+#intro a{
+    background-color: #00aced;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.2rem;
+}
+#intro a:hover{
+    font-size: 1.04rem;
+    padding: 0.7rem 1.7rem;
+    margin: -0.2rem 0;
+    background-color: #fb3958;
+}
+
+/* Contact Information */
+#contactInfo{
+    height: 60vh;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contactList{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -15rem;
+}
+.contactType{
+    background-color: white;
+    padding: 1rem 3rem;
+    width: 70vh;
+    border: 1px solid grey;
+    box-shadow: grey 1px 1px 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contactType i{
+    font-size: 40px;
+    margin: 2rem 0;
+}
+.contactType p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+.contactType div{
+    color: #3d5b99;
+    margin-bottom: 2rem;
+}
+
+/* Contact Form */
+#contactForm{
+    height: 50vh;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSFc-xfCvRLTRr4rjn7OH-eGX28lkVtaEBEkA&usqp=CAU');
+}
+#backgroundBlue{
+    height: 100vh;
+}
+#contactForm img{
+    height: 400px;
+    width: 400px;
 }
 
 /* Footer */

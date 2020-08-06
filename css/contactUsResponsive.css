@@ -14,6 +14,13 @@
     .icons{
         width: 50%;
     }
+    #contactInfo{
+        padding: 0;
+    }
+    .contactType{
+        width: 60vh;
+        height: 50vh;
+    }
     footer{
         flex-direction: column;
         align-items: center;
@@ -25,6 +32,25 @@
     #otherThings{
         border-top: 2px solid black;
         padding-top: 1rem;
+    }
+}
+@media (max-width: 850px){
+    .contactType{
+        width: 50vh;
+        padding: 0.2rem;
+    }
+}
+@media (max-width: 700px){
+    #contactInfo{
+        height: 100%;
+    }
+    #contactList{
+        flex-direction: column;
+        margin-top: -7rem;
+    }
+    .contactType{
+        width: 70%;
+        margin: 3rem;
     }
 }
 @media (max-width: 600px){
@@ -39,6 +65,12 @@
         width: 48%;
         padding: 0.1rem;
     }
+    #intro h1{
+        font-size: 2.2rem;
+    }
+    #intro p{
+        padding: 0 1rem;
+    }
     #smallSize{
         margin: 0;
         padding: 0%;
@@ -51,6 +83,12 @@
     .icons{
         width: 100%;
     }
+    #intro h1{
+        font-size: 2rem;
+    }
+    #intro p{
+        padding: 0 0.5rem;
+    }
 }
 @media(max-width: 300px){
     h1{
@@ -61,5 +99,11 @@
     }
     div{
         font-size: 1rem;
+    }
+    #intro h1{
+        font-size: 1.7rem;
+    }
+    #intro p{
+        padding: 0 1rem;
     }
 }
