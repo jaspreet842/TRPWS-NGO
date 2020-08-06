@@ -79,9 +79,21 @@ h2{
     height: 50vh;
     background-image: linear-gradient(90deg, rgba(107, 21, 245, 0.5), rgba(12, 131, 241, 0.5));
 }
+#head div{
+    text-shadow: rgb(245, 52, 68) 2px 2px 1px, rgb(255, 211, 13) 4px 4px 1rem;
+    animation: drop-down 1s ease-out backwards;
+}
+@keyframes drop-down{
+    0%{
+        transform: translateY(-500px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
 #background hr{
     margin: 0em;
-    background-color: white;
+    background-image: linear-gradient(45deg, rgb(245, 52, 68),  rgb(255, 211, 13));
     height: 2px;
     animation: line 1s ease-out 1s 1 backwards;
 }
@@ -114,6 +126,11 @@ h2{
     align-items: center;
     justify-content: center;
     background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQZrW775pfrP1_i_8hT1FqILU9Fz7XdaRHy2Q&usqp=CAU') center/cover;
+}
+#middle h1{
+    background-image: linear-gradient(45deg, rgb(107, 21, 245), #fb3958, rgb(12, 131, 241),rgb(107, 21, 245), #fb3958, rgb(12, 131, 241));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #middle div{
     margin-top: 2rem;

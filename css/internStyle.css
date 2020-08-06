@@ -66,7 +66,8 @@ h2{
 
 /* Intro Section */
 #background{
-    background: url('https://www.trpws.com/wp-content/uploads/2020/06/carousel11.png') no-repeat center/cover;
+    background: rgba(0, 0, 0, 0.7) url('https://mediaindia.eu/wp-content/uploads/2017/01/14938316_593811450814180_4792412075286765649_n.jpg') no-repeat center/cover;
+    background-blend-mode: darken;
     background-attachment: fixed;
     height: 90vh;
 }
@@ -79,12 +80,25 @@ h2{
     color: white;
     height: 100%;
     padding: 2rem;
-    background-image: linear-gradient(90deg, rgba(21, 245, 234, 0.7), rgba(100, 12, 241, 0.7));
+    background-image: linear-gradient(90deg, rgba(21, 245, 234, 0.5), rgba(100, 12, 241, 0.5));
 }
 #intro h1{
     font-size: 4rem;
     font-weight: lighter;
+    background-image: linear-gradient(45deg, #CA4246, #E16541, #E16541, #F18F43, #F18F43, #CA4246, #E16541, #E16541, #F18F43, #F18F43);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: drop-down 1s ease-out forwards;
 }
+@keyframes drop-down{
+    0%{
+        transform: translateY(-500px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 #intro h1 hr{
     margin-top: 0.2rem;
     background-color: white;
@@ -94,6 +108,15 @@ h2{
     font-family: 'Open-Sans', sans-serif;
     font-size: 1.5rem;
     padding: 0 2rem;
+    animation: drop-left 1s ease-out forwards;
+}
+@keyframes drop-left{
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 #intro a{
     margin: 2rem;
@@ -103,6 +126,13 @@ h2{
     font-family: 'Roboto-Condensed', sans-serif;
     padding: 0.8rem 1.3rem;
     border-radius: 2rem;
+}
+#intro a:hover{
+    padding: 1rem 1.5rem;
+    font-size: 1.04rem;
+    margin: 1.8rem 2rem;
+    background-color: #d1ce26;
+    box-shadow: rgb(10, 10, 10) 0.5rem 0.5rem 0.5rem;
 }
 
 /* Internship Form */
@@ -128,13 +158,14 @@ h2{
 #internForm{
     margin: 2rem auto;
     width: 40%;
-}
-#internForm{
     color: white;
     font-family: 'Mulish', sans-serif;
 }
 #internForm h1{
     text-align: center;
+    background-image: linear-gradient(45deg, #00a3cc, #fcfcfc, #00a3cc, #fcfcfc, #00a3cc, #fcfcfc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .formElement{
     display: flex;

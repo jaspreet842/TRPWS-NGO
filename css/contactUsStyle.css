@@ -64,6 +64,47 @@ h2{
     display: none;
 }
 
+/* section */
+#background{
+    /* background: rgba(0, 0, 0, 0.7) url('https://www.ashokleyland.com/documents/1305159/1312286/Contact+us_topbanner_cropped.jpg/97407cec-b0fb-6e71-0062-76d3b367f6d2?t=1523961063566') no-repeat center/cover; */
+    background: rgba(0, 0, 0, 0.7) url('https://hexaware.com/wp-content/uploads/2019/10/contact-us.jpg') no-repeat center/cover;
+    background-blend-mode: darken;
+    height: 100vh;
+}
+#intro{
+    background: linear-gradient(90deg, rgba(123, 42, 99, 0.7), rgba(123, 42, 55, 0.7));
+    padding: 4rem 1rem;
+    height: 100%;
+}
+#intro h1{
+    font-size: 6rem;
+    background-image: linear-gradient(90deg, rgb(72, 255, 0), rgb(98, 0, 255), rgb(72, 255, 0), rgb(98, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    text-align: center;
+}
+#connectList{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.connectType{
+    width: 40%;
+    margin: 2rem 0;
+    padding: 0 3rem;
+}
+.connectType h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.connectType div{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
 /* Footer */
 footer{
     font-family: 'Open Sans', sans-serif;
