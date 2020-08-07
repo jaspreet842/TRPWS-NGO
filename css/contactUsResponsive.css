@@ -21,6 +21,18 @@
         width: 60vh;
         height: 50vh;
     }
+    .envelopeImg img{
+        margin-left: 5rem;
+    }
+    .formInputs{
+        width: 100%;
+    }
+    .sendBtn{
+        font-size: 16px;
+    }
+    .sendBtn:hover{
+        font-size: 17px;
+    }
     footer{
         flex-direction: column;
         align-items: center;
@@ -39,6 +51,22 @@
         width: 50vh;
         padding: 0.2rem;
     }
+    .sendBtn{
+        font-size: 14px;
+        width: 60%;
+    }
+    .sendBtn:hover{
+        font-size: 15px;
+    }
+    #address{
+        flex-direction: column;
+    }
+    #addressMap{
+        width: 100%;
+    }
+    #addressWritten{
+        width: 90%;
+    }
 }
 @media (max-width: 700px){
     #contactInfo{
@@ -48,9 +76,15 @@
         flex-direction: column;
         margin-top: -7rem;
     }
+    .sendBtn{
+        width: 70%;
+    }
     .contactType{
         width: 70%;
         margin: 3rem;
+    }
+    #address{
+        padding: 5rem 1rem;
     }
 }
 @media (max-width: 600px){
@@ -71,6 +105,12 @@
     #intro p{
         padding: 0 1rem;
     }
+    .envelopeImg{
+        display: none;
+    }
+    #contactForm form{
+        width: 100%;
+    }
     #smallSize{
         margin: 0;
         padding: 0%;
@@ -83,13 +123,26 @@
     .icons{
         width: 100%;
     }
+    #addressWritten{
+        padding: 4rem 0.5rem;
+    }
     #intro h1{
         font-size: 2rem;
     }
     #intro p{
         padding: 0 0.5rem;
     }
+    #backgroundBlue h1{
+        font-size: 1.5rem;
+    }
+    #backgroundBlue h5{
+        font-size: 1.1rem;
+    }
+    #address{
+        padding: 5rem 0;
+    }
 }
+/* 25767041/70427066 */
 @media(max-width: 300px){
     h1{
         font-size: 1.5rem;
@@ -99,6 +152,15 @@
     }
     div{
         font-size: 1rem;
+    }
+    #backgroundBlue h1{
+        font-size: 1.4rem;
+    }
+    #backgroundBlue h5{
+        font-size: 1rem;
+    }
+    .sendBtn{
+        width: 80%;
     }
     #intro h1{
         font-size: 1.7rem;

@@ -20,7 +20,7 @@ h2{
 #navBar{
     display: flex;
     justify-content: space-between;
-    background: url('https://ak.picdn.net/shutterstock/videos/24478154/thumb/1.jpg') no-repeat center/cover;
+    background-color: rgb(17, 26, 29);
 }
 #navBar img{
     filter: opacity(0.8);
@@ -68,6 +68,7 @@ h2{
 #background{
     background: url('https://files.123freevectors.com/wp-content/original/130999-abstract-blue-and-white-polygonal-triangular-background.jpg') no-repeat center/cover;
     height: 80vh;
+    background-attachment: fixed;
 }
 #intro{
     height: 100%;
@@ -77,7 +78,19 @@ h2{
     align-items: center;
 }
 #intro h1{
+    background-image: linear-gradient(45deg, rgb(179, 182, 0), rgb(48, 153, 0), rgb(0, 133, 93));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: drop-down 1s ease-out backwards;
     font-size: 3rem;
+}
+@keyframes drop-down{
+    0%{
+        transform: translateY(-500px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 #intro h1 hr{
     height: 1px;
@@ -107,7 +120,7 @@ h2{
 
 /* Contact Information */
 #contactInfo{
-    height: 60vh;
+    height: 50vh;
     padding: 0 4rem;
     display: flex;
     justify-content: center;
@@ -143,21 +156,117 @@ h2{
     margin-bottom: 2rem;
 }
 .contactType div{
-    color: #3d5b99;
+    color: #fb3958;
     margin-bottom: 2rem;
 }
 
-/* Contact Form */
-#contactForm{
+/* Address */
+#backgroundAdd{
+    background: url('https://cdn.onlinewebfonts.com/svg/img_459539.png') no-repeat center/contain;
+    background-attachment: fixed;
+}
+#address{
+    background: linear-gradient(90deg, rgba(238, 195, 6, 0.5), rgba(233, 10, 84, 0.5));
+    display: flex;
+    padding: 5rem 4rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#addressMap{
+    width: 50%;
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+#addressWritten{
+    width: 40%;
+    box-shadow: black 1px 1px 1rem;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+    background-color: white;
+}
+#addressMap iframe{
+    width: 80%;
     height: 50vh;
-    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSFc-xfCvRLTRr4rjn7OH-eGX28lkVtaEBEkA&usqp=CAU');
 }
+.fa-map-marker{
+    margin-right: 1rem;
+}
+#addressWritten h1{
+    background-image: linear-gradient(90deg, rgb(238, 195, 6), rgb(233, 10, 84));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3rem;
+}
+#addressWritten p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.1rem;
+}
+#address hr{
+    height: 2px;
+    background-color: black;
+}
+
+/* Contact Form */
 #backgroundBlue{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(#a2e6ff, #ffffff);
+    padding: 4rem 0;
 }
-#contactForm img{
-    height: 400px;
-    width: 400px;
+#contactForm{
+    display: flex;
+    width: 100%;
+}
+.fa-globe{
+    margin-right: 0.5rem;
+}
+.envelopeImg{
+    width: 50%;
+}
+.envelopeImg img{
+    margin: 1rem 0;
+    margin-left: 10rem;
+    height: 70%;
+    width: 70%;
+}
+#contactForm form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.formInputs{
+    width: 70%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 3rem;
+}
+.sendBtn{
+    width: 50%;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border-radius: 30px;
+    font-family: 'Open-sans', sans-serif;
+    background: linear-gradient(90deg, rgb(148, 115, 221) 0%, rgb(26, 201, 228) 100%);
+    padding: 1rem;
+    transition: background 0.2s ease 0s;
+}
+.sendBtn:hover{
+    background: rgb(148, 115, 221);
+    padding: 1.2rem;
+    margin: -0.2rem;
+    font-size: 19px;
+    border-radius: 32px;
 }
 
 /* Footer */
