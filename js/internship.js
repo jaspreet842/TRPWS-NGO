@@ -1,4 +1,5 @@
 window.onbeforeunload = scrollTo(0, 0);
+
 let hamburger = document.querySelector('#hamBurger');
 let hamback = document.querySelector('#hamBack');
 let navlist = document.querySelector('#navList');
@@ -16,4 +17,15 @@ hamback.addEventListener('click', function () {
     navlist.setAttribute('style', 'display: none;')
     hamback.setAttribute('style', 'display:none;');
     hamburger.setAttribute('style', 'display: block;');
+});
+
+
+let submitBtn = document.querySelector('.submitBtn');
+submitBtn.addEventListener('click', function(){
+    let name = document.getElementById('name').value;
+    let number = document.getElementById('number').value;
+    let email = document.getElementById('email').value;
+    let internType = document.getElementById('internType').value;
+    let message = document.getElementById('message').value;
+    alert(`Name:- ${name}\nPhone Number:- ${number}\nEmail:- ${email}\nInternship:- ${internType}\nMessage:- ${message}`);
 });

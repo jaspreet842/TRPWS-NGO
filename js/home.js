@@ -1,3 +1,5 @@
+window.onbeforeunload = scrollTo(0, 0);
+
 let hamburger = document.querySelector('#hamBurger');
 let hamback = document.querySelector('#hamBack');
 let navlist = document.querySelector('#navList');
@@ -44,4 +46,3 @@ for (let i = 0; i < btnReadMore.length; i++) {
         });
     });
 }
-window.onbeforeunload(scrollTo(0, 0));

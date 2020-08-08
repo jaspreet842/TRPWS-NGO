@@ -154,6 +154,10 @@ hr{
 .btnApply:hover{
     background-color: rgb(247, 173, 37);
     cursor: pointer;
+    padding: 1rem 1.9rem;
+    margin: 1.8rem 0rem;
+    font-size: 1.04rem;
+    box-shadow: goldenrod 2px 2px 2rem;
 }
 
 /* Section For Services We Provide */

@@ -1,3 +1,5 @@
+window.onbeforeunload = scrollTo(0, 0);
+
 let hamburger = document.querySelector('#hamBurger');
 let hamback = document.querySelector('#hamBack');
 let navlist = document.querySelector('#navList');
@@ -17,4 +19,10 @@ hamback.addEventListener('click', function () {
     hamburger.setAttribute('style', 'display: block;');
 });
 
-window.onbeforeunload(scrollTo(0, 0));
+
+document.querySelector('.sendBtn').addEventListener('click', function(){
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('question').value;
+    alert(`Name:- ${name}\nEmail-address:- ${email}\nMessage:- ${message}`);
+})

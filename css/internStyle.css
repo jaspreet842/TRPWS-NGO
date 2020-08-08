@@ -88,17 +88,18 @@ h2{
     background-image: linear-gradient(45deg, #CA4246, #E16541, #E16541, #F18F43, #F18F43, #CA4246, #E16541, #E16541, #F18F43, #F18F43);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: drop-down 1s ease-out forwards;
+    visibility: hidden;
+    animation: drop-down 1s ease-out 2s forwards;
 }
 @keyframes drop-down{
-    0%{
+    from{
         transform: translateY(-500px);
     }
-    100%{
+    to{
         transform: translateY(0px);
+        visibility: visible;
     }
 }
-
 #intro h1 hr{
     margin-top: 0.2rem;
     background-color: white;
@@ -108,14 +109,16 @@ h2{
     font-family: 'Open-Sans', sans-serif;
     font-size: 1.5rem;
     padding: 0 2rem;
-    animation: drop-left 1s ease-out forwards;
+    visibility: hidden;
+    animation: drop-left 2s ease-out forwards;
 }
 @keyframes drop-left{
-    0%{
-        transform: translateX(500px);
+    from{
+        transform: translateX(200%);
     }
-    100%{
+    to{
         transform: translateX(0px);
+        visibility: visible;
     }
 }
 #intro a{
@@ -126,6 +129,15 @@ h2{
     font-family: 'Roboto-Condensed', sans-serif;
     padding: 0.8rem 1.3rem;
     border-radius: 2rem;
+    animation: spin 2s ease-in-out forwards;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
 }
 #intro a:hover{
     padding: 1rem 1.5rem;

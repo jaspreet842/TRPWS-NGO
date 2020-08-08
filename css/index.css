@@ -2,28 +2,23 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
 }  
 .frontImage {
     height: 100%;
     position: relative;
-    animation: bgAnime 20s ease-in-out 0s infinite;
+    animation: bgAnime 8s ease-in-out 0s infinite;
 } 
 @keyframes bgAnime {
     0%{
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.trpws.com/wp-content/uploads/2020/06/WhatsApp-Image-2020-05-30-at-16.46.12-1.jpeg") no-repeat center center/cover;
-    }
-    20%{
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.trpws.com/wp-content/uploads/2020/06/carousel8.png") no-repeat center center/cover;
     }
-    40%{
+    25%{
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.trpws.com/wp-content/uploads/2020/06/carousel3.png") no-repeat center center/cover;
     }
-    60%{
+    50%{
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.trpws.com/wp-content/uploads/2020/06/carousel7-1.png") no-repeat center center/cover;
     }
-    80%{
+    75%{
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.trpws.com/wp-content/uploads/2020/06/carousel11.png") no-repeat center center/cover;
     }
     100%{
@@ -37,18 +32,84 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    width: 100%;
+}
+.frontText h1{
+    font-family: 'Roboto-condensed', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: goldenrod;
+    animation: drop-down 2s ease-out forwards;
+}
+@keyframes drop-down{
+    0%{
+        transform: translateY(-600%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+.frontText h1 hr{
+    margin-top: 0.2rem;
+    height: 1px;
+    width: 0%;
+    background: linear-gradient(90deg, rgb(252, 0, 76),  rgb(255, 0, 234));
+    animation: increase 2s ease-out 2s forwards;
+}
+@keyframes increase{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+.frontText p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, rgb(248, 219, 228) , rgb(0, 255, 234));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: drop-above 2s ease-out forwards;
+}
+@keyframes drop-above{
+    0%{
+        transform: translateY(1000%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
 }
 .frontText button {
+    font-family: 'Open-sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
     border: none;
+    border-radius: 2rem;
     outline: 0;
     display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
+    padding: 1rem 1.5rem;
+    margin: 2rem;
+    color: white;
+    background: linear-gradient(90deg, rgb(255, 4, 255), rgb(0, 214, 252));
     text-align: center;
     cursor: pointer;
-}  
+    animation: drop-left 2s ease-out forwards;
+}
+@keyframes drop-left{
+    0%{
+        transform: translateX(600%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
 .frontText button:hover {
-    background-color: #555;
+    background-color: goldenrod;
+    box-shadow: grey 2px 2px 1rem;
     color: white;
+    padding: 1.2rem 1.7rem;
+    font-size: 1.04rem;
+    margin: 1.8rem;
 }

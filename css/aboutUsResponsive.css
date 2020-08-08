@@ -1,4 +1,4 @@
-@media (max-width: 1000px){
+@media (max-width: 1072px){
     #navList{
         display: none;
     }
@@ -81,11 +81,11 @@
     p{
         font-size: 1rem;
     }
-    .icons{
-        width: 100%;
-    }
     #trpwsTeam{
         margin: 2rem 0;
+    }
+    #trpwsTeam>h1{
+        font-size: 3rem;
     }
     #second h2{
         margin: 0 2rem;
@@ -95,12 +95,35 @@
         flex-direction: column;
         margin: 0 auto;
     }
-}
-@media (max-width: 300px){
+    .teamMate{
+        padding: 2rem 1rem;
+        margin: 2rem 1rem;
+    }
+    .personProfile{
+        margin: 1rem;
+    }
     .personImage img{
         width: 250px;
     }
     #aKaur .personImage img{
         width: 250px;
+    }
+    .icons{
+        width: 100%;
+    }
+}
+@media (max-width: 300px){
+    /* .teamMate{
+        padding: 2rem 1rem;
+        margin: 2rem 1rem;
+    }
+    .personProfile{
+        margin: 1rem;
+    } */
+    .personImage img{
+        width: 200px;
+    }
+    #aKaur .personImage img{
+        width: 200px;
     }
 }

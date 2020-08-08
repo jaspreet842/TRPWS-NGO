@@ -1,3 +1,5 @@
+window.onbeforeunload = scrollTo(0, 0);
+
 let hamburger = document.querySelector('#hamBurger');
 let hamback = document.querySelector('#hamBack');
 let navlist = document.querySelector('#navList');
@@ -16,5 +18,3 @@ hamback.addEventListener('click', function () {
     hamback.setAttribute('style', 'display:none;');
     hamburger.setAttribute('style', 'display: block;');
 });
-
-window.onbeforeunload(scrollTo(0, 0));

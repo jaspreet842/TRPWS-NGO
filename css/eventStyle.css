@@ -11,8 +11,20 @@ body::before{
     width: 100%;
     position: fixed;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.6) url('https://www.photohdx.com/images/2016/11/clean-dark-green-turquoise-background-texture.jpg') no-repeat center center/cover;
+    background: rgba(0, 0, 0, 0.6) url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-025.jpg') no-repeat center/cover;
     background-blend-mode: darken;
+    animation: move-bg 20s ease-in-out infinite forwards;
+}
+@keyframes move-bg{
+    0%{
+        background-position-y: 0%;
+    }
+    50%{
+        background-position-y: 100%;
+    }
+    100%{
+        background-position-y: 0%;
+    }
 }
 
 /* Navigation Bar */
@@ -20,6 +32,7 @@ body::before{
     position: fixed;
     width: 100%;
     display: flex;
+    z-index: 100;
     justify-content: space-between;
     background-color: rgb(17, 26, 29);
 }
@@ -81,7 +94,8 @@ body::before{
     margin: 1rem;
     padding: 4rem;
     border: 2px solid black;
-    background: linear-gradient(rgba(117, 148, 250, 0.692),rgba(86, 195, 245, 0.699));
+    /* background: url('https://ak.picdn.net/shutterstock/videos/19369183/thumb/1.jpg') no-repeat center/cover; */
+    background: linear-gradient(90deg, rgb(81, 173, 216), white);
 }
 .event:nth-child(2n){
     border-radius: 1rem 0 1rem 1rem;
@@ -109,7 +123,7 @@ body::before{
 }
 .event p{
     font-family: 'Open Sans', sans-serif;
-    color: white;
+    color: black;
 }
 .readMore{
     font-family: 'Roboto', sans-serif;

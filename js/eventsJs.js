@@ -1,3 +1,5 @@
+window.onbeforeunload = scrollTo(0, 0);
+
 let hamburger = document.querySelector('#hamBurger');
 let hamback = document.querySelector('#hamBack');
 let navlist = document.querySelector('#navList');
@@ -64,4 +66,10 @@ previousPage.addEventListener('click', function(){
     window.scrollTo(0,0);
 });
 
-window.onbeforeunload(scrollTo(0, 0));
+let commentsList = document.querySelectorAll('.commentLink');
+for(let i=0;i<commentsList.length;i++){
+    commentsList[i].addEventListener('click', function(){
+        let comment = prompt("Leave A Comment:-", "No Comments");
+        alert(`You left the following comment:- \n${comment}`);
+    });
+}
